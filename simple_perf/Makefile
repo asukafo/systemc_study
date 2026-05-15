@@ -11,7 +11,11 @@ endif
 
 CXXFLAGS += -I$(SYSTEMC_HOME)/include
 
+UNAME_S := $(shell uname -s)
 LDFLAGS = -L$(SYSTEMC_HOME)/lib -lsystemc -pthread
+ifeq ($(UNAME_S),Darwin)
+	LDFLAGS += -Wl,-rpath,$(SYSTEMC_HOME)/lib
+endif
 
 TARGET = simple_perf
 
