@@ -1,0 +1,10 @@
+# Compiled object files
+*.o
+
+# Compiled SystemC binaries
+hello_systemc/hello_systemc
+simple_perf/simple_perf
+perf_model/perf_model
+
+# SystemC library (if vendored locally)
+systemc/
