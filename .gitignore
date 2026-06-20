@@ -6,5 +6,15 @@ hello_systemc/hello_systemc
 simple_perf/simple_perf
 perf_model/perf_model
 
+# TLM study compiled binaries
+tlm_study/tlm/lt/lt
+tlm_study/tlm/lt/run.log
+tlm_study/my_lt/step1/step1
+tlm_study/my_lt/step2/step2
+tlm_study/my_lt/step3/step3
+
+# macOS debug symbol bundles
+*.dSYM/
+
 # SystemC library (if vendored locally)
 systemc/
